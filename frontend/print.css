@@ -1,0 +1,14 @@
+@media print {
+    /* Hide everything except the div with id 'new-bill' */
+    body * {
+        visibility: hidden;
+    }
+    #new-bill, #new-bill * {
+        visibility: visible;
+    }
+    #new-bill {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
